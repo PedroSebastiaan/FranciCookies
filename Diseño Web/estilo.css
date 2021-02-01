@@ -1,0 +1,142 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	background-color: #faebd7;	
+}
+.nav__pestaña{
+	display: block;
+	text-align: center;
+	opacity: 1;
+	text-decoration: none; 	
+}
+.nav__pestaña--1{
+	font-size: 1em;
+	font-family: 'Lobster', cursive;
+	line-height: 2;
+	display: inline-block;
+	padding: 0.5em 5em;
+	border-radius: 1em;
+	box-shadow: 0.2em 0.2em 0.2em 0em #000;
+	text-decoration: none; 	
+}
+.nav__pestaña--2{
+	font-size: 1em;
+	font-family: 'Lobster', cursive;
+	line-height: 2;
+	display: inline-block;
+	padding: 0.5em 5em;
+	border-radius: 1em;
+	box-shadow: 0.2em 0.2em 0.2em 0em #000;
+	text-decoration: none;
+}
+.nav__pestaña--3{
+	font-size: 1em;
+	font-family: 'Lobster', cursive;
+	line-height: 2;
+	display: inline-block;
+	padding: 0.5em 5em;
+	border-radius: 1em;
+	box-shadow: 0.2em 0.2em 0.2em 0em #000;
+	text-decoration: none;		
+}
+.banner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: #00bfff;
+	max-height: 120px;
+	margin: 1px;
+}
+.titulo-maximo {
+	font-size: 3em;
+	font-family: 'Lobster', cursive;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 2.5;
+	text-align: center;
+	background: #00bfff;
+	margin: auto;
+	position: relative; 
+}
+.logo{
+	display: inline-block;
+	position: relative;
+	max-height: 120px;
+	object-fit: scale-down;
+	background: #00bfff;
+	margin-left: 30 %; 
+	position: relative;
+}
+.subtitulo {
+	font-size: 5em;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	line-height: 2;
+}
+.imagenes {
+	display: inline-block;
+	box-sizing: content-box;
+	position: relative;
+	width: 60vw;
+	height: 65vh;	
+	margin: 0.5em;
+	object-fit: contain;
+}
+.imagenes--1, .imagenes--2, .imagenes--3, .imagenes--4, .imagenes--5 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 0.2em solid #808080;
+	margin: auto;
+}
+.presentacion {
+	font-size: 3em;
+	font-family: 'Lobster', cursive;
+	line-height: 2.2;
+}
+.presentacion__p {
+	font-size: 0.8em;
+	font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+	line-height: 2;
+}
+.redes {
+	font-size: 1.5em;
+	font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+	line-height: 2;
+	text-align: center;
+}
+.redes--insta{
+	font-size: 1em;
+	font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+	line-height: 2;
+	text-align: center;
+}
+.redes--face{
+	font-size: 1em;
+	font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+	line-height: 2;
+	text-align: center;	
+}
+.link--insta{
+	font-size: 1em;
+	font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+	line-height: 2;
+	text-align: center;
+}
+.link--face{
+	font-size: 1em;
+	font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+	line-height: 2;
+	text-align: center;
+} 
+.bolder {
+	font-weight: bold;
+}
+ 
