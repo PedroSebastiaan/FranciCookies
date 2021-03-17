@@ -1,142 +1,243 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	background-color: #faebd7;	
-}
-.nav__pestaña{
-	display: block;
+}	
+/*Aqui parte el Nav*/
+.nav
+{
+    margin: 0 auto;
+	padding: 1em 3em;
 	text-align: center;
-	opacity: 1;
-	text-decoration: none; 	
+	background: #2196f3;
 }
-.nav__pestaña--1{
-	font-size: 1em;
-	font-family: 'Lobster', cursive;
-	line-height: 2;
-	display: inline-block;
-	padding: 0.5em 5em;
-	border-radius: 1em;
-	box-shadow: 0.2em 0.2em 0.2em 0em #000;
-	text-decoration: none; 	
+.nav a:before
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 1s;
+    z-index: -1;
 }
-.nav__pestaña--2{
-	font-size: 1em;
-	font-family: 'Lobster', cursive;
-	line-height: 2;
-	display: inline-block;
-	padding: 0.5em 5em;
-	border-radius: 1em;
-	box-shadow: 0.2em 0.2em 0.2em 0em #000;
-	text-decoration: none;
+.nav a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 1s;
+    z-index: -1;
 }
-.nav__pestaña--3{
-	font-size: 1em;
-	font-family: 'Lobster', cursive;
-	line-height: 2;
-	display: inline-block;
-	padding: 0.5em 5em;
-	border-radius: 1em;
-	box-shadow: 0.2em 0.2em 0.2em 0em #000;
-	text-decoration: none;		
+.nav a:after
+{
+    border-width: 2px;
+    transition: all 1s;
 }
-.banner {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background: #00bfff;
-	max-height: 120px;
-	margin: 1px;
+.nav a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-40%) scale(1);
+}
+.nav a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-40%) scale(1.3); 
+}
+.nav__1, .nav__2, .nav__3{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px 'Lobster', cursive;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    transition: all 1s;
+}
+.nav__1:hover, .nav__2:hover, .nav__3:hover{
+    font-size: 30px;
+}
+/*Aqui el título maximo*/
+.contenedor-titulo-maximo{
+  display: block;
+  max-width: 100%;
+  max-height: 120px;
+  text-align: center;
 }
 .titulo-maximo {
-	font-size: 3em;
+  display: inline;
+  position: relative;
+  top: -30px;
+	font-size: 4.5em;
 	font-family: 'Lobster', cursive;
 	font-style: italic;
 	font-weight: bold;
-	line-height: 2.5;
-	text-align: center;
-	background: #00bfff;
-	margin: auto;
-	position: relative; 
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .logo{
-	display: inline-block;
-	position: relative;
+	display: inline;
 	max-height: 120px;
 	object-fit: scale-down;
-	background: #00bfff;
-	margin-left: 30 %; 
 	position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*Main content*/
+.main-content{
+  display: block;
+  max-width: 100%;
+  max-height: 550px;
+}
+/*Aqui parte el Carrusel*/
+.pic-ctn {
+  width: 500px;
+  height: 375px; 
+}
+@keyframes display {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+.pic-ctn {
+  position: relative;
+  margin: 50px;
+  display: inline-block;
+}
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(10% - 50px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+.pic{
+  object-fit: contain;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 10%;
+  justify-content: center;
+}
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+/*Aqui el subtitulo*/
+.contenedor-subtitulo{
+  display: inline;
+  position: relative;
+  top: -400px;
+  left: 50px;
+  margin-left: 70px;
 }
 .subtitulo {
-	font-size: 5em;
-	font-family: 'Lobster', cursive;
-	text-align: center;
-	line-height: 2;
-}
-.imagenes {
-	display: inline-block;
-	box-sizing: content-box;
-	position: relative;
-	width: 60vw;
-	height: 65vh;	
-	margin: 0.5em;
-	object-fit: contain;
-}
-.imagenes--1, .imagenes--2, .imagenes--3, .imagenes--4, .imagenes--5 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	border: 0.2em solid #808080;
-	margin: auto;
-}
-.presentacion {
+  display: inline;
 	font-size: 3em;
 	font-family: 'Lobster', cursive;
-	line-height: 2.2;
+	text-align: center;
+  line-height: 2;
 }
-.presentacion__p {
-	font-size: 0.8em;
-	font-family: 'Dancing Script', cursive;
-font-family: 'Lobster', cursive;
-	line-height: 2;
+/*Aqui el Saludo*/
+.saludo{
+  display: inline;
+	font-size: 2em;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+  line-height: 2;
+  position: relative;
+  left: 730px;
+  top: -400px;
 }
+.mensaje{
+  display: inline-block;
+  width: 30vw;
+  height: 500px;
+	font-size: 1.5em;
+	font-family: 'Lobster', cursive;
+	text-align: justify;
+  line-height: 2;
+  position: relative;
+  left: 730px;
+  top: -380px;
+  object-fit: contain ;
+}
+/*Aqui el footer*/
 .redes {
 	font-size: 1.5em;
 	font-family: 'Dancing Script', cursive;
-font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;
 	line-height: 2;
 	text-align: center;
+  background: #FAC3B7;
 }
 .redes--insta{
 	font-size: 1em;
 	font-family: 'Dancing Script', cursive;
-font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;
 	line-height: 2;
 	text-align: center;
+  background: #FAC3B7;
 }
 .redes--face{
 	font-size: 1em;
 	font-family: 'Dancing Script', cursive;
-font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;
 	line-height: 2;
 	text-align: center;	
+  background: #FAC3B7;
 }
 .link--insta{
 	font-size: 1em;
 	font-family: 'Dancing Script', cursive;
-font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;
 	line-height: 2;
 	text-align: center;
+  background: #FAC3B7;
 }
 .link--face{
 	font-size: 1em;
 	font-family: 'Dancing Script', cursive;
-font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;
 	line-height: 2;
 	text-align: center;
+  background: #FAC3B7;
 } 
-.bolder {
-	font-weight: bold;
-}
- 
