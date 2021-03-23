@@ -202,7 +202,7 @@ img:nth-child(5) {
 }
 /*Aqui el footer*/
 .redes {
-	font-size: 1.5em;
+	font-size: 1em;
 	font-family: 'Dancing Script', cursive;
   font-family: 'Lobster', cursive;
 	line-height: 2;
@@ -210,7 +210,7 @@ img:nth-child(5) {
   background: #FAC3B7;
 }
 .redes--insta{
-	font-size: 1em;
+	font-size: 0.8em;
 	font-family: 'Dancing Script', cursive;
   font-family: 'Lobster', cursive;
 	line-height: 2;
@@ -218,7 +218,7 @@ img:nth-child(5) {
   background: #FAC3B7;
 }
 .redes--face{
-	font-size: 1em;
+	font-size: 0.8;
 	font-family: 'Dancing Script', cursive;
   font-family: 'Lobster', cursive;
 	line-height: 2;
@@ -226,7 +226,7 @@ img:nth-child(5) {
   background: #FAC3B7;
 }
 .link--insta{
-	font-size: 1em;
+	font-size: 0.8;
 	font-family: 'Dancing Script', cursive;
   font-family: 'Lobster', cursive;
 	line-height: 2;
@@ -234,7 +234,7 @@ img:nth-child(5) {
   background: #FAC3B7;
 }
 .link--face{
-	font-size: 1em;
+	font-size: 0.8;
 	font-family: 'Dancing Script', cursive;
   font-family: 'Lobster', cursive;
 	line-height: 2;
